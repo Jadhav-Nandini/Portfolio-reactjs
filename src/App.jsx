@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import { ThemeProvider } from './context/themeContext.jsx'
 import Projects from './components/Projects.jsx'
+import Skills from './components/Skills.jsx'
 
 const App = () => {
 
@@ -11,8 +12,6 @@ const App = () => {
     <ThemeProvider >
     <Navbar/>
     <Hero/>
-    <Projects/>
-    <About/>
     </ThemeProvider>
     
   )

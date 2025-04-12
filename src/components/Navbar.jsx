@@ -3,11 +3,10 @@ import { motion } from "framer-motion";
 import { Menu, Moon, Sun, X } from "lucide-react";
 import { useTheme } from "../context/themeContext";
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const {darkMode, toggleDarkMode} = useTheme()
+  const { darkMode, toggleDarkMode } = useTheme();
 
   const navLinks = [
     { name: "Home", href: "#" },
@@ -17,14 +16,13 @@ const Navbar = () => {
     { name: "Contact", href: "#contact" },
   ];
 
-  
   return (
     <>
       <motion.nav
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="  fixed top-0 left-0 w-full p-5 z-50 border-b dark:border-white/10 border-black/10   backdrop-blur-md "
+        className="fixed top-0 left-0 w-full p-5 z-50 border-b dark:border-white/10 border-black/10   backdrop-blur-md "
       >
         <div className=" max-w-7xl mx-auto  py-3 flex justify-between items-center dark:text-white text-gray-800 ">
           <motion.div
@@ -53,50 +51,51 @@ const Navbar = () => {
                 href={link.href}
                 whileHover={{ scale: 1.1, color: "#912da0" }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="
-                bg-gradient-to-b
-                
-                hover:underline underline-offset-5 decoration-[#e879f9]"
+                className="hover:underline underline-offset-5 decoration-[#e879f9]"
               >
                 {link.name}
               </motion.a>
             ))}
-            <button onClick={toggleDarkMode}>
-              
-              {darkMode ? (<Moon size={26} />) : (<Sun size={26} className="text-gray-900" />)}
-              
-              </button>
-          </div>
 
-          
+            <button onClick={toggleDarkMode}>
+              {darkMode ? (
+                <Moon size={26} />
+              ) : (
+                <Sun size={26} className="text-gray-900" />
+              )}
+            </button>
+          </div>
 
           {/* Mobile Menu
            */}
           <div className=" flex gap-4 md:hidden">
-          
-          <button onClick={toggleDarkMode} >
-              
-              {darkMode ? (<Moon size={24} />) : (<Sun size={24} className="text-gray-900" />)}
-  
-              </button>
-          
+            <button onClick={toggleDarkMode}>
+              {darkMode ? (
+                <Moon size={24} />
+              ) : (
+                <Sun size={24} className="text-gray-900" />
+              )}
+            </button>
 
-            <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? "" : <Menu size={26} />}
+            <button onClick={() => setIsOpen(true)}>
+              <Menu size={26} />
             </button>
           </div>
         </div>
-
+      </motion.nav>
         {/* Mobile Sidebar */}
         <motion.div
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? 0 : "100%" }}
-          transition={{ type: "tween", duration: 0.1 }}
-          className="fixed top-0 right-0 h-full w-[65%] backdrop-blur-sm bg-white/3 text-white border-1 border-white/20 
-        duration-300 transition-all  ease-in-out md:hidden z-40"
+          transition={{ type: "tween", duration: 0.4 }} 
+          className="fixed top-0 right-0 h-screen w-[65%] backdrop-blur-xl   bg-white/20 dark:bg-white/10 text-white border-1 border-black/20 dark:border-white/20
+        duration-300 transition-all  ease-in-out z-50  shadow-xl md:hidden"
         >
           <button className="w-full px-7 pt-5" onClick={() => setIsOpen(false)}>
-            <X size={26} className="hover:scale-115 text-black/40 dark:text-white " />
+            <X 
+              size={26}
+              className="hover:scale-115 text-black/40 dark:text-white "
+            />
           </button>
 
           <div className="flex flex-col items-center p-7 space-y-7 ">
@@ -107,10 +106,8 @@ const Navbar = () => {
                 onClick={() => setIsOpen(false)}
                 className="text-xl font-medium
               tracking-wider px-5 py-4
-
               bg-gradient-to-r
-
-               from-pink-600 via-rose-600
+             from-pink-600 via-rose-600
               to-red-400
               hover:from-pink-800 hover:via-rose-600
               hover:to-red-300/50
@@ -123,17 +120,15 @@ const Navbar = () => {
               text-transparent
           
               rounded hover:border dark:hover:bg-white/4 dark:hover:border-white/50 hover:scale-105
-              hover:bg-black hover:border-black/50 "
+              hover:bg-black hover:border-black/50  "
               >
                 {link.name}
               </a>
             ))}
           </div>
         </motion.div>
-      </motion.nav>
     </>
   );
 };
 
 export default Navbar;
-
