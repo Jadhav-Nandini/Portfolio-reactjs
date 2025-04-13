@@ -14,8 +14,14 @@
 }
 
 body{
-    background-color: #ebdfeade;
+    background-color: #fbe4edfc;
+    
 }
+html {
+    scroll-behavior: smooth;
+  }
+  
+
 
 
 

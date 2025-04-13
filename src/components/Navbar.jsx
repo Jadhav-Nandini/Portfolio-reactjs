@@ -33,7 +33,8 @@ const Navbar = () => {
           >
             {/* Logo */}
             <span
-              className="font-poppin  bg-gradient-to-r from-red-800 via-rose-600 to-fuchsia-700
+            id="#"
+              className="font-nav-icon cursor-default bg-gradient-to-r from-red-800 via-rose-600 to-fuchsia-700
                dark:from-rose-500 dark:via-red-300
               dark:to-fuchsia-300 
             bg-clip-text text-transparent
@@ -49,16 +50,19 @@ const Navbar = () => {
               <motion.a
                 key={link.name}
                 href={link.href}
-                whileHover={{ scale: 1.1, color: "#912da0" }}
+                whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                className="hover:underline underline-offset-5 decoration-[#e879f9]"
+                className="hover:underline underline-offset-5 decoration-[#fd4fa9] 
+                bg-gradient-to-r from-gray-800 via-gray-600 to-fuchsia-700 dark:from-rose-500 dark:via-red-300 dark:to-fuchsia-300  bg-clip-text text-transparent dark:hover:from-rose-400 dark:hover:via-red-400 hover:to-red-300 "
               >
                 {link.name}
               </motion.a>
             ))}
 
-            <button onClick={toggleDarkMode}>
-              {darkMode ? (
+            <button 
+            className="cursor-pointer"
+            onClick={toggleDarkMode}>
+              {darkMode ? ( 
                 <Moon size={26} />
               ) : (
                 <Sun size={26} className="text-gray-900" />
@@ -68,7 +72,7 @@ const Navbar = () => {
 
           {/* Mobile Menu
            */}
-          <div className=" flex gap-4 md:hidden">
+          <div className=" flex gap-4  md:hidden">
             <button onClick={toggleDarkMode}>
               {darkMode ? (
                 <Moon size={24} />
@@ -87,7 +91,7 @@ const Navbar = () => {
         <motion.div
           initial={{ x: "100%" }}
           animate={{ x: isOpen ? 0 : "100%" }}
-          transition={{ type: "tween", duration: 0.4 }} 
+          transition={{ type: "tween", duration: 0.1 }} 
           className="fixed top-0 right-0 h-screen w-[65%] backdrop-blur-xl   bg-white/20 dark:bg-white/10 text-white border-1 border-black/20 dark:border-white/20
         duration-300 transition-all  ease-in-out z-50  shadow-xl md:hidden"
         >
