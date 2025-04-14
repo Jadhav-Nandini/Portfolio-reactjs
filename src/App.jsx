@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import { ThemeProvider } from './context/themeContext.jsx'
 import Skills from './components/Skills.jsx'
+import About from './components/About.jsx'
 
 
 
@@ -17,8 +18,8 @@ return (
 
   <Navbar/>
   <Hero/>
-  <Skills className="dark:bg-black"/>
- 
+  <Skills/>
+  <About/>
   </ThemeProvider>
 
   </>
