@@ -17,7 +17,8 @@ return (
 
   <Navbar/>
   <Hero/>
-  <Skills/>
+  <Skills className="dark:bg-black"/>
+ 
   </ThemeProvider>
 
   </>

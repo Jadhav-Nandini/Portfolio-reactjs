@@ -1,7 +1,4 @@
 
-
-
-
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -9,7 +6,7 @@ const Hero = () => {
     <>
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center px-6 pt-28  dark:bg-black transition-colors duration-500"
+      className="min-h-screen flex items-center justify-center px-6 pt-28 transition-colors duration-500"
     >
       <motion.div
         initial={{ opacity: 0, y: 40 }}
@@ -17,8 +14,8 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="text-center max-w-2xl"
       >
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-black dark:text-white">
-          Hey, I'm <span className=" bg-gradient-to-r from-[#da0a76]  via-[#c6124b] to-[#be1889e4] text-transparent bg-clip-text tracking-wide font-poppin">Nandini</span>
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-black dark:text-white font-poppin">
+          Hey, I'm  <span className=" bg-gradient-to-r from-[#da0a76]  via-[#c6124b] to-[#be1889e4] text-transparent bg-clip-text tracking-wide font-poppin"> Nandini</span>
         </h1>
         <p className="mt-4  text-gray-700 dark:text-gray-300 font-heading text-2xl font-light ">
     

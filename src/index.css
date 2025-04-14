@@ -15,14 +15,11 @@
 
 body{
     background-color: #fbe4edfc;
+    @apply dark:bg-black;
     
 }
 html {
     scroll-behavior: smooth;
   }
-  
-
-
-
 
   

@@ -1,7 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { TbBrandTailwind } from "react-icons/tb";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiGreensock } from "react-icons/si";
 
 export const libraries = [
   {
@@ -24,6 +24,11 @@ export const libraries = [
     title: "TailwindCSS",
     Icon: TbBrandTailwind,
     href: "https://tailwindcss.com/",
+  },
+  {
+    title: "Gsap",
+    Icon: SiGreensock,
+    href: "https://gsap.com/",
   },
   
 ];
