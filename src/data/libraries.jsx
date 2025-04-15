@@ -2,6 +2,9 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { TbBrandTailwind } from "react-icons/tb";
 import { SiExpress, SiGreensock } from "react-icons/si";
+import { BsBootstrapFill } from "react-icons/bs";
+
+
 
 export const libraries = [
   {
@@ -24,6 +27,11 @@ export const libraries = [
     title: "TailwindCSS",
     Icon: TbBrandTailwind,
     href: "https://tailwindcss.com/",
+  },
+ {
+    title: "Bootstrap",
+    Icon: BsBootstrapFill ,
+    href: "https://getbootstrap.com/",
   },
   {
     title: "Gsap",
