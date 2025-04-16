@@ -27,7 +27,7 @@ const Skills = () => {
       scrollTrigger:{
           trigger:skillRef.current,
           scroller:"body",
-          markers:true,
+          markers:false,
           start:"top 60%",
           end:"top 50%",
           scrub:5
