@@ -38,7 +38,6 @@ const Skills = () => {
   })
   
   
-  
   return (
     <div 
     id='skills'

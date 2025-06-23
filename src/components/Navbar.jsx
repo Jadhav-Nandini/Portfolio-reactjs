@@ -53,7 +53,7 @@ const Navbar = () => {
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: "spring", stiffness: 300 }}
                 className="hover:underline underline-offset-5 decoration-[#fd4fa9] 
-                bg-gradient-to-r from-gray-800 via-gray-600 to-fuchsia-700 dark:from-rose-500 dark:via-red-300 dark:to-fuchsia-300  bg-clip-text text-transparent dark:hover:from-rose-400 dark:hover:via-red-400 hover:to-red-300 "
+                bg-gradient-to-r from-gray-800 via-fuchsia-800/90 to-fuchsia-700 dark:from-rose-500 dark:via-red-300 dark:to-fuchsia-300  bg-clip-text text-transparent dark:hover:from-rose-400 dark:hover:via-red-400 hover:to-red-300 "
               >
                 {link.name}
               </motion.a>

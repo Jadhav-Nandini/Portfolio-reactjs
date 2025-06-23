@@ -14,7 +14,7 @@
 }
 
 body{
-    background-color: #fbe4edfc;
+    background-color: #ecced9fc;
     @apply dark:bg-black;
     
 }
