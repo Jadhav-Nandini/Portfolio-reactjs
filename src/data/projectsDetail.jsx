@@ -22,6 +22,17 @@ export const projects = [
 },
 
 {
+    title: "Simple Dashboard",
+    description:"Create task and update it  ",
+    image:"/dashboard.png",
+    github:"https://github.com/Jadhav-Nandini/nextjs-simple-dashboard",
+    tech:["HTML", "TAILWINDCSS", "TYPESCRIPT", "NEXTJS"],
+    
+},
+
+
+
+{
     title: "Clone",
     description:"clone of sidcup family golf ",
     image:"/golf.png",
@@ -30,6 +41,14 @@ export const projects = [
     
 },
 
+{
+    title: "Flappy Bird Game",
+    description:"Desktop game using Java Swing ",
+    image:"/birdGame.png",
+    github:"https://github.com/Jadhav-Nandini/JavaProjects/tree/master/src/javaPack",
+    tech:["CORE JAVA", "JAVA SWING", ],
+    
+},
 
 
 ]
