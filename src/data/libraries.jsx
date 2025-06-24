@@ -3,6 +3,7 @@ import { IoLogoNodejs } from "react-icons/io";
 import { TbBrandTailwind } from "react-icons/tb";
 import { SiExpress, SiGreensock } from "react-icons/si";
 import { BsBootstrapFill } from "react-icons/bs";
+import { RiNextjsFill } from "react-icons/ri";
 
 
 
@@ -10,6 +11,12 @@ export const libraries = [
   {
     title: "React.js",
     Icon: FaReact,
+    href: "https://reactjs.org/",
+  },
+
+  {
+    title: "Next.js",
+    Icon: RiNextjsFill,
     href: "https://reactjs.org/",
   },
 
